@@ -27,7 +27,7 @@ A simple contact form website that connects to a Telegram bot for message forwar
 
 2. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-repo/contact-bot-site.git
+   git clone https://github.com/mizegerd-tech/Contact-us-website-bot.git
    cd contact-bot-site
    ```
 
@@ -87,7 +87,7 @@ A simple contact form website that connects to a Telegram bot for message forwar
 
 2. **کلون کردن ریپازیتوری**  
    ```bash
-   git clone https://github.com/your-repo/contact-bot-site.git
+   git clone https://github.com/mizegerd-tech/Contact-us-website-bot.git
    cd contact-bot-site
    ```
 

@@ -1,0 +1,242 @@
+@import url('https://cdn.fontcdn.ir/Font/Vazir/Vazir.css');
+
+body {
+    font-family: 'Vazir', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: right;
+    direction: rtl;
+}
+
+.contact-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.7);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+    text-align: right;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+}
+
+.contact-container:hover {
+    transform: translateY(-10px);
+}
+
+.logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2em;
+    color: #FFA07A;
+    margin-bottom: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+h1:hover {
+    color: #FFD700;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.half-width {
+    flex: 0 0 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FF4500;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+label:hover {
+    color: #FFA07A;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FF4500;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    text-align: right;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #FF8C00;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+input[type="file"] {
+    border: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FF4500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Vazir', sans-serif;
+}
+
+button i {
+    margin-right: 5px;
+    font-family: 'Font Awesome 5 Free'; /* افزودن فونت آیکون */
+}
+
+button:hover {
+    background-color: #FF8C00;
+    transform: translateY(-2px);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-prev, .btn-next {
+    flex: 1;
+    max-width: 120px;
+    justify-content: center;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step-active {
+    display: block;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #FF4500;
+    background-color: rgba(255, 165, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #FF4500;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .half-width {
+        flex: 0 0 100%;
+    }
+
+    .contact-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .half-width {
+        flex: 0 0 100%;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+}

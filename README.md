@@ -1,6 +1,7 @@
 
-### Contact Bot Website
+# 📱 Contact Bot Website
 A simple contact form website that connects to a Telegram bot for message forwarding and automated responses.
+![Banner](https://github.com/user-attachments/assets/ddd7b1e8-7854-4103-b444-157b6ff86624)
 
 ### Table of Contents
 1. [Install & Run](#install--run)
